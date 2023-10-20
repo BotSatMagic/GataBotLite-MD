@@ -107,9 +107,9 @@ if (!('antiFacebook' in chat)) chat.antiFacebook = false
 if (!('antiInstagram' in chat)) chat.antiInstagram = false
 if (!('antiTwitter' in chat)) chat.antiInstagram = false
 if (!('antifake' in chat)) chat.antifake = false 
-if (!('antiTraba' in chat)) chat.antiTraba = true
-if (!('antitoxic' in chat)) chat.antitoxic = true 
-if (!('reaction' in chat)) chat.reaction = true
+if (!('antiTraba' in chat)) chat.antiTraba = false
+if (!('antitoxic' in chat)) chat.antitoxic = false 
+if (!('reaction' in chat)) chat.reaction = false
 if (!isNumber(chat.expired)) chat.expired = 0
 } else
 global.db.data.chats[m.chat] = {
@@ -132,9 +132,9 @@ antiFacebook: false,
 antiInstagram: false,
 antiTwitter: false,
 antifake: false,
-antiTraba: true,
-antitoxic: true,
-reaction: true,
+antiTraba: false,
+antitoxic: false,
+reaction: false,
 expired: 0,
 }
             
