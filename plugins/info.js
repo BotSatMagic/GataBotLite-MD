@@ -1,4 +1,5 @@
 //let { MessageType } = (await import('@adiwajshing/baileys')).default 
+/*
 let MessageType = (await import(global.baileys)).default
 import { promises } from 'fs'
 import { join } from 'path'
@@ -247,6 +248,7 @@ await conn.sendContactArray(m.chat, lista, null, { quoted: fkontak })
 const data = global.owner.filter(([id, isCreator]) => id && isCreator) 
 this.sendContact(m.chat, data.map(([id, name]) => [id, name]), fkontak, { contextInfo: { externalAdReply: { showAdAttribution: true }}})
 }*/
+/*
 } catch (e) {
 reportError(e)
 } 
@@ -350,3 +352,4 @@ return [h, m, s].map(v => v.toString().padStart(2, 0)).join(':')}
 
 const more = String.fromCharCode(8206)
 const readMore = more.repeat(4001)
+*/
