@@ -13,5 +13,5 @@ user.GBLanguage = 0
 m.reply(lenguajeGB.smsUnreg3(usedPrefix, regbot))
 }
 handler.command = /^anulareg|unreg(ister)?$/i
-handler.register = true
+handler.register = false
 export default handler
