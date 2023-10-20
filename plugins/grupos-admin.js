@@ -170,7 +170,10 @@ let pesan = args.join` `
 let oi = `» ${lenguajeGB['smsAddB5']()} ${pesan}`
 let teks = `*${lenguajeGB['smstagaa']()}*\n\n${oi}\n\n`
 for (let mem of participants) {
-teks += `⎔ @${mem.id.split('@')[0]}\n`}
+    teks += `┃⊹ @${mem.id.split('@')[0]}\n`}
+    teks += `┃\n`
+    teks += `┃ ${wm}\n`
+    teks += `╰━━━━━[ *𓃠 ${vs}* ]━━━━━⬣`
 await conn.sendMessage(m.chat, { text: teks, mentions: participants.map(a => a.id) }, )    
 break
     
@@ -247,7 +250,7 @@ break
 handler.command = /^(promote|daradmin|darpoder|demote|quitarpoder|quitaradmin|setwelcome|bienvenida|edit(?:ar)?wel(?:come)?|setbye|despedida|edit(?:ar)?(bye)?|setdesk|setdesc|newdesc|descripción|descripcion|cambiardesc|setname|newnombre|nuevonombre|cambiarnombre|cambiarpp|setpp(group|grup|gc)?|nuevolink|nuevoenlace|revoke|resetlink|kick|echar|hechar|sacar|ban|group|grupo|tagall|invocar|invocacion|todos|invocación|prohibir|prohibit|privar|deprive|add|agregar|invitar|invite|añadir)$/i
 handler.group = true
 handler.botAdmin = true 
-handler.register = true
+handler.register = false
 handler.admin = true
 
 export default handler 
