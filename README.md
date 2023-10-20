@@ -60,7 +60,8 @@ yarn install
 npm install
 npm start
 ```
-grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/BotSatMagic/GataBotLite-MD/master/update.sh | bash 
+`grep -q 'bash\|wget' <(dpkg -l) || apt install -y bash wget && wget -O - https://raw.githubusercontent.com/BotSatMagic/GataBotLite-MD/master/update.sh | bash `
+
 ### 🍁 TERMUX 24/7 🍁 
 > Comandos para realizar una ejecución 24/7
 - INICIAR
